@@ -1,0 +1,33 @@
+{
+  "name": "tiny-exec",
+  "repository": "github:fabiospampinato/tiny-exec",
+  "description": "A tiny wrapper around \"spawn\" for executing a command efficiently and conveniently.",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "tsex clean",
+    "compile": "tsex compile",
+    "compile:watch": "tsex compile --watch",
+    "test": "tsex test",
+    "test:watch": "tsex test --watch",
+    "prepublishOnly": "tsex prepare"
+  },
+  "keywords": [
+    "tiny",
+    "simple",
+    "exec",
+    "spawn"
+  ],
+  "peerDependencies": {
+    "@types/node": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "fava": "^0.3.2",
+    "tsex": "^3.2.0",
+    "typescript": "^5.4.2"
+  }
+}
