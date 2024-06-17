@@ -18,7 +18,11 @@ async function exec ( command: string, argsOrOptions?: string[] | SpawnOptions, 
 
     const processArgs = Array.isArray ( argsOrOptions ) ? argsOrOptions : [];
     const processOptions = Array.isArray ( argsOrOptions ) ? options : argsOrOptions;
-    const process = spawn ( command, processArgs, { windowsHide: true, ...processOptions } );
+    const process = spawn ( command, processArgs, { windowsHide: true, ...processOptions, stdio: [
+      'ignore', // stdin
+      'pipe', // stdout
+      'pipe' // stderr
+    ] } );
 
     const stderrChunks: Buffer[] = [];
     const stdoutChunks: Buffer[] = [];

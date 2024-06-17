@@ -6,7 +6,7 @@ import exec from '../dist/index.js';
 
 /* MAIN */
 
-describe ( 'Tiny Exec', it => {
+describe ( 'Nano Exec', it => {
 
   it ( 'can run a program successfully, directly', async t => {
 

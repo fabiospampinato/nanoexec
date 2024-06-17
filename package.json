@@ -1,6 +1,6 @@
 {
-  "name": "tiny-exec",
-  "repository": "github:fabiospampinato/tiny-exec",
+  "name": "nanoexec",
+  "repository": "github:fabiospampinato/nanoexec",
   "description": "A tiny wrapper around \"spawn\" for executing a command efficiently and conveniently.",
   "version": "1.0.0",
   "type": "module",
@@ -17,6 +17,7 @@
   },
   "keywords": [
     "tiny",
+    "nano",
     "simple",
     "exec",
     "spawn"

@@ -1,4 +1,4 @@
-# Tiny Exec
+# Nano Exec
 
 A tiny wrapper around "spawn" for executing a command efficiently and conveniently.
 
@@ -7,13 +7,13 @@ It supports all options that `child_process.spawn` itself supports.
 ## Install
 
 ```sh
-npm install --save tiny-exec
+npm install --save nanoexec
 ```
 
 ## Usage
 
 ```ts
-import exec from 'tiny-exec';
+import exec from 'nanoexec';
 
 // Execute a command successfully, directly
 
